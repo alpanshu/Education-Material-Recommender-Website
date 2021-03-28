@@ -1,0 +1,6 @@
+Recommendations for Probability and Random Variable:
+
+1: Engineering Chemistry
+2: MAT2001CAT1 Q
+3: Digital Logic
+4: Operating Systems

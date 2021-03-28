@@ -1,0 +1,40 @@
+
+
+<?php
+$name=filter_input(INPUT_POST,'name');
+$regno=filter_input(INPUT_POST,'regno');
+if(!empty($name))
+{
+if(!empty($regno))
+{
+$conn=mysqli_connect("localhost","root","","mgt");
+if(mysqli_connect_error()){
+    echo "Connection error";
+    die();
+}
+else{
+    $sql="INSERT INTO Users(Registration, username)
+    VALUES('$regno','$name')";
+    if(mysqli_query($conn,$sql){
+        echo "Registration successful";
+    }
+    else
+    {
+        echo "Error";
+    }
+    mysqli_close($close);
+}
+}
+else
+{
+    echo "registration no. is empty";
+    die();
+}
+}else
+{
+echo "Name is empty";
+die();
+}
+?>
+
+
